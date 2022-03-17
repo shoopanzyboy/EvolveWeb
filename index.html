@@ -4,28 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <input type="text" id="mySearch" onkeyup="myFunction()" placeholder="Search.." title="Type in a category">
-    <title>Home Page</title>
+    <script src="script.js" defer> </script>
 </head>
 <body>
-    <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a> 
-        <a href="#"><i class="fa fa-fw fa-search"></i> Search</a> 
-        <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a> 
-        <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
+    <div class="header">
+        <div class="dropdown" data-dropdown>
+            <button class="link" data-dropdown-button>Information</button>
+             <div class="dropdown-menu Information-grid">
+                <div>
+                    <div class="dropdown-heading">Free Tutorial</div>
+                    <div class="dropdown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">Latest</a>
+                        <a href="#" class="link">Popular</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown-heading">Courses</div>
+                    <div class="dropdown-links">
+                        <a href="#" class="link">JavaScript</a>
+                        <a href="#" class="link">CSS</a>
+                        <a href="#" class="link">React</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown-heading">Blog</div>
+                    <div class="dropdown-links">
+                        <a href="#" class="link">All</a>
+                        <a href="#" class="link">Latest</a>
+                        <a href="#" class="link">Popular</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="dropdown-heading">Other</div>
+                    <div class="dropdown-links">
+                        <a href="#" class="link">Instagram</a>
+                        <a href="#" class="link">Twitter</a>
+                        <a href="#" class="link">Tik Tok </a>
+                    </div>
+                </div> 
+            </div>
+        </div>
     </div>
-    <ul id="myMenu">
-        <li><a href="#">HTML</a></li>
-        <li><a href="#">CSS</a></li>
-        <li><a href="#">JavaScript</a></li>
-        <li><a href="#">PHP</a></li>
-        <li><a href="#">Python</a></li>
-        <li><a href="#">jQuery</a></li>
-        <li><a href="#">SQL</a></li>
-        <li><a href="#">Bootstrap</a></li>
-        <li><a href="#">Node.js</a></li>
-    </ul>
+    <a href="#" class="link">Pricing</a> 
+     <div class="dropdown-menu">
+        <form action="" class="login">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <button type="submit">Login</button>
+        </form> 
+     </div>
+    <button class="link">Login</button>
 </body>
 </html>
